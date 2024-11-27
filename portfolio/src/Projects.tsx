@@ -8,8 +8,8 @@ import { Github, ExternalLink } from "lucide-react";
 import ecom from "./assets/ecom.png";
 import todoapp from "./assets/todoapp.png";
 import music from "./assets/music.png";
-import game from "./assets/game.png";
 import weather from "./assets/weather.png";
+import expenseSplitter from "./assets/expenseSplitter.png";
 
 const projectsData: Project[] = [
 	{
@@ -67,14 +67,15 @@ const projectsData: Project[] = [
 	},
 	{
 		id: "5",
-		title: "2048 Game",
+		title: "Expense Splitter",
 		description:
-			"A browser-based 2048 game developed using HTML, CSS, and JavaScript with local storage to save progress. Features responsive grid layout, tile merging, score tracking, and a restart option",
-		image: `${game}`,
-		techStack: ["HTML", "CSS", "JavaScript", "Local Storage"],
-		githubUrl: "https://github.com/Indrasena-913/2048-Game",
-		liveUrl: "https://indra2048game.netlify.app/",
+			"A modern web application to simplify group expense tracking and splitting, developed using React, TypeScript, and Tailwind CSS. Features a dynamic expense sharing calculator, user-friendly interface, and persistent storage using local storage.",
+		image: `${expenseSplitter}`,
+		techStack: ["React", "TypeScript", "Tailwind CSS", "Local Storage"],
+		githubUrl: "https://github.com/Indrasena-913/Expense-Splitter",
+		liveUrl: "https://indraexpensesplitter.netlify.app/",
 	},
+
 	{
 		id: "6",
 		title: "Weather App",
