@@ -1,0 +1,30 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		@apply antialiased text-gray-900 dark:text-white;
+	}
+}
+
+@layer components {
+	.bg-grid-pattern {
+		background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
+			linear-gradient(to bottom, #80808012 1px, transparent 1px);
+		background-size: 24px 24px;
+	}
+}
+
+@layer utilities {
+	.prose-custom {
+		@apply prose-lg md:prose-xl dark:prose-invert 
+           prose-headings:text-gray-900 dark:prose-headings:text-white
+           prose-p:text-gray-600 dark:prose-p:text-gray-300;
+	}
+}
