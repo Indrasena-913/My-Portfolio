@@ -43,13 +43,16 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
 		},
 	};
 	const handleMenuItemClick = (href: string) => {
-		console.log(`Clicked href: ${href}`);
 		const targetElement = document.querySelector(href);
+
 		if (targetElement) {
-			console.log(`Found target: ${targetElement}`);
 			targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+
+			setTimeout(() => {
+				setIsMenuOpen(false);
+			}, 700);
 		} else {
-			console.error(`Target element not found for href: ${href}`);
+			console.error(`Element with href "${href}" not found.`);
 		}
 	};
 
@@ -149,6 +152,7 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
 							exit="hidden"
 							variants={mobileMenuVariants}
 							className="lg:hidden"
+							id="closeone"
 						>
 							<div className="px-2 pt-2 pb-3 space-y-1 bg-gray-100 dark:bg-gray-800">
 								{navItems.map((item) => (
