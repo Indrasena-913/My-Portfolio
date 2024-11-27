@@ -1,6 +1,6 @@
 import mviepic from "./assets/mviepic.png";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { Project } from "./lib/types";
 import Card from "./components/ui/Card";

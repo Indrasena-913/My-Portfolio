@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import inter from "./assets/inter.png";
 import tenth from "./assets/tenth.png";

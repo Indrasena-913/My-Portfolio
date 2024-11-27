@@ -12,7 +12,6 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
 	strings,
 	typeSpeed,
 	backSpeed,
-	loop,
 }) => {
 	const [currentText, setCurrentText] = useState<string>("");
 	const [index, setIndex] = useState<number>(0); // To track the current string
