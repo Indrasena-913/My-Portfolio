@@ -8,13 +8,13 @@ const Footer: React.FC = () => {
 		{
 			id: 1,
 			Icon: Github,
-			href: "https://github.com/yourusername",
+			href: "https://github.com/Indrasena-913",
 			label: "GitHub",
 		},
 		{
 			id: 2,
 			Icon: Linkedin,
-			href: "https://linkedin.com/in/yourusername",
+			href: "https://www.linkedin.com/in/s-indrasena-609452285",
 			label: "LinkedIn",
 		},
 		{
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
 		{
 			id: 4,
 			Icon: Mail,
-			href: "mailto:your.email@example.com",
+			href: "mailto:indrasena14318@gmail.com",
 			label: "Email",
 		},
 	];
